@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Cliente{% endblock %}     
+{% block content %}
+<section class="section-datas">
+    <span class="item-saldo item">Tu saldo es: ${{saldo}}</span>
+    <span class="item-limite item">Puedes retirar hasta: ${{limite}}</span>
+</section>
+<br/>
+<form action="/retiro" method="post">
+    {{ form.pago.label }} {{ form.pago(placeholder="$$$$", class="controls") }}
+    <span class="message-error">{{mensaje}}</span>
+    {{ form.hidden_tag() }}
+    {{ form.submit(class="button") }}
+    <section class="links">
+        <a class="link" href="{{ url_for('formulario') }}">Inicio</a>
+    </section>
+{% endblock %}       
+

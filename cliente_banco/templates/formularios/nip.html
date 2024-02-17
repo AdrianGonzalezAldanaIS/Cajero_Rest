@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Nip{% endblock %}     
+{% block content %}
+{% if intentos > 0 %}
+        <span class="intentos">Intentos: {{intentos}}</span>
+    {% endif %}
+<form action="/nip" method="post">
+    {{ form.num_nip.label }} {{ form.num_nip(placeholder="####", class="controls") }}
+    <span class="message-error">{{mensaje}}</span>
+    {{ form.hidden_tag() }}
+    {{ form.submit(class="button") }}
+    <section class="links">
+        <a class="link" href="{{ url_for('formulario') }}">Inicio</a>
+    </section>
+</form>
+{% endblock %}       
+
+
+
+

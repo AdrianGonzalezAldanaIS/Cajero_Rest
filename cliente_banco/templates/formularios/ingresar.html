@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Ingresar{% endblock %}     
+{% block content %}
+<form action="/tarjeta" method="post">
+    {{ form.num_tarjeta.label }} {{ form.num_tarjeta(placeholder="####", class="controls") }}
+    <br/>
+    <span class="message-error">{{mensaje}}</span>
+    <br/>
+    {{ form.hidden_tag() }}
+    {{ form.submit(class="button") }}
+</form>
+{% endblock %}       
+
+
+
+

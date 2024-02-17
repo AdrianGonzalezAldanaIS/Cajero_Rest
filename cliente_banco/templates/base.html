@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    <title>{% block title %} {% endblock%}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Banco DeltaFi</h1>
+            <h3>Bienvenido</h3>
+        </header>
+        <section class="main">
+            {% block content %}
+            {% endblock %}
+        </section>
+        <footer class="footer">
+            <span>Todos los derechos a DeltaFi</span>
+        </footer>
+    </div>
+</body>
+</html>

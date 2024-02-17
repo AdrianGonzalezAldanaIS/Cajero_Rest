@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ce964d;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: #107074;
+    
+}
+
+.header {
+    text-align: center;
+    color:azure;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+    font-style: oblique;
+}
+
+.header h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.main {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    color: white;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    border: 2px solid #57b9bd;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background-color: #075255;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #57b9bd;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    background-color: #18a14d;
+    padding: 10px;
+    margin: 16px 0;
+    font-family: 'Montserrat';
+    font-style: oblique;
+    font-size: 16px;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.message-error {
+    color: rgb(238, 100, 95);
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-style: arial;
+    font-weight: bold;
+}
+
+.intentos {
+    padding: 5px;
+    margin: 10px 0px 5px 0px;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 3px;
+    font-size: 16px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #3aa868;
+    border-radius: 1em;
+}
+
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.link {
+    grid-column: 2;
+}
+
+.section-datas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.item-saldo {
+    grid-row: 1;
+}
+
+.item-limite {
+    grid-row: 2;
+}
+
+.item {
+    font-size: 18px;
+    padding: 5px 5px;
+    margin: 2px 5px 5px 5px;
+    text-align: center;
+}
+
